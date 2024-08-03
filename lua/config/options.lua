@@ -13,6 +13,7 @@ vim.opt.cursorline = true -- highlight the ROW on which the cursor is
 vim.opt.cursorcolumn = true -- highlight the COLUMN on which the cursor is
 vim.opt.scrolloff = 5 -- minimal no. of screen lines to keep above & below the cursor
 vim.opt.foldmethod = "marker" -- markers are used to specify folds
+vim.opt.wrapscan = false -- Searches wrap around the end of the file.
 vim.opt.list = true
 -- vim.opt.listchars = { space = ' ', tab = '⋮ ', eol = '↵' }
 vim.opt.listchars = { space = ' ', tab = '⋮ ' }
