@@ -4,4 +4,5 @@ return {
 	opts = {
 		style = "warmer",
 	},
+	enabled = false,
 }
