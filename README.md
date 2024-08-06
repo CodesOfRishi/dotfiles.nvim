@@ -7,7 +7,6 @@
 
 ```text
 ~/.config/nvim/
-
 ├── init.lua
 └── lua/
     ├── config/
@@ -18,11 +17,13 @@
         ├── autopairs.lua
         ├── everforest.lua
         ├── gitsigns.lua
+        ├── markview.lua
         ├── onedark.lua
         ├── surround.lua
         ├── todo-comments.lua
         ├── tokyonight.lua
         └── treesitter.lua
 
-4 directories, 12 files
+4 directories, 13 files
 ```
+
