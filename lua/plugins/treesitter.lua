@@ -5,6 +5,6 @@ return {
 	opts = {
 		highlight = { enable = true, },
 		indent = { enable = true, },
-		ensure_installed = { "c", "cpp", "java", "toml", "bash", "python", "lua" },
+		ensure_installed = { "c", "cpp", "java", "toml", "bash", "python", "lua", "html" },
 	},
 }
