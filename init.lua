@@ -34,6 +34,7 @@ vim.opt.rtp:prepend(lazypath)
 local nvim_configuration_modules = { 
 	"config.options",
 	"config.autocmds",
+	"config.mappings",
 	"config.lazy"
 }
 
