@@ -8,3 +8,8 @@ vim.api.nvim_set_keymap('i', '<C-k>', "<Esc>:m .-2<CR>==gi", { noremap = true, s
 vim.api.nvim_set_keymap('n', '<C-j>', ":m .+1<CR>==", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<C-k>', ":m .-2<CR>==", { noremap = true, silent = true })
 
+-- INFO: Select all
+vim.api.nvim_set_keymap('v', '<C-a>', "<Esc>gg0vG$", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('i', '<C-a>', "<Esc>gg0vG$", { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-a>', "<Esc>gg0vG$", { noremap = true, silent = true })
+
