@@ -16,12 +16,3 @@ require("lazy").setup({
 	-- -- automatically check for plugin updates
 	-- checker = { enabled = true },
 })
-
--- Load Onedark theme
--- require('onedark').load()
-
--- Load Tokyonight theme
--- vim.cmd[[colorscheme tokyonight-storm]]
-
--- Load Everforest theme
-vim.cmd([[colorscheme everforest]])
