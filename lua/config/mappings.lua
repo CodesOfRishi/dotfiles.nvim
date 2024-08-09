@@ -13,3 +13,9 @@ keymap('i', '<C-k>', "<Esc>:m .-2<CR>==gi")
 
 -- INFO: Select all
 keymap({ 'n', 'v', 'i' }, '<C-a>', "<Esc>gg0vG$")
+
+-- -- INFO: Resizing windows
+keymap('n', '<C-down>', ':resize +3<CR>')
+keymap('n', '<C-up>', ':resize -3<CR>')
+keymap('n', '<C-right>', ':vertical resize +3<CR>')
+keymap('n', '<C-left>', ':vertical resize -3<CR>')
