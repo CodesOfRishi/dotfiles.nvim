@@ -1,4 +1,6 @@
 return {
 	"LudoPinelli/comment-box.nvim",
-	opts = {},
+	opts = {
+		box_width = 100,
+	},
 }
