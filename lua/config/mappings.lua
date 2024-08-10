@@ -23,9 +23,3 @@ keymap('n', '<C-down>', ':resize +3<CR>', "Increase current window height by 3")
 keymap('n', '<C-up>', ':resize -3<CR>', "Decrease current window height by 3")
 keymap('n', '<C-right>', ':vertical resize +3<CR>', "Increase current window width by 3")
 keymap('n', '<C-left>', ':vertical resize -3<CR>', "Decrease current window width by 3")
-
--- -- Splitting windows
-keymap('n', '<C-w><C-v>l', '<Esc>:set splitright<cr><Esc>:vsp ')
-keymap('n', '<C-w><C-v>h', '<Esc>:set nosplitright<cr><Esc>:vsp ')
-keymap('n', '<C-w><C-s>j', '<Esc>:set splitbelow<cr><Esc>:sp ')
-keymap('n', '<C-w><C-s>k', '<Esc>:set nosplitbelow<cr><Esc>:sp ')
