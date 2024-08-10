@@ -1,6 +1,6 @@
 local function keymap(mode, key, command, desc)
 	desc = desc or ""
-	vim.keymap.set(mode, key, command, { noremap = true, silent = true, desc = desc })
+	vim.keymap.set(mode, key, command, { noremap = true, silent = false, desc = desc })
 end
 
 -- ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
