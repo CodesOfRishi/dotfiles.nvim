@@ -1,6 +1,6 @@
-local function keymap(mode, key, command)
-	local opts = { noremap = true, silent = true }
-	vim.keymap.set(mode, key, command, opts)
+local function keymap(mode, key, command, desc)
+	desc = desc or ""
+	vim.keymap.set(mode, key, command, { noremap = true, silent = true, desc = desc })
 end
 
 -- ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
@@ -8,18 +8,18 @@ end
 -- └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
 
 -- CTRL-j & CTRL-k to move line(s) down or up respectively in normal, visual and insert modes
-keymap('n', '<C-j>', ":m .+1<CR>==")
-keymap('n', '<C-k>', ":m .-2<CR>==")
-keymap('v', '<C-j>', ":m '>+1<CR>gv=gv")
-keymap('v', '<C-k>', ":m '<-2<CR>gv=gv")
-keymap('i', '<C-j>', "<Esc>:m .+1<CR>==gi")
-keymap('i', '<C-k>', "<Esc>:m .-2<CR>==gi")
+keymap('n', '<C-j>', ":m .+1<CR>==", "Move the current line down in Normal mode")
+keymap('n', '<C-k>', ":m .-2<CR>==", "Move the current line up in Normal mode")
+keymap('v', '<C-j>', ":m '>+1<CR>gv=gv", "Move the selected line(s) down")
+keymap('v', '<C-k>', ":m '<-2<CR>gv=gv", "Move the selected line(s) up.")
+keymap('i', '<C-j>', "<Esc>:m .+1<CR>==gi", "Move the current line down in Insert mode")
+keymap('i', '<C-k>', "<Esc>:m .-2<CR>==gi", "Move the current line up in Insert mode")
 
 -- Select all
-keymap({ 'n', 'v', 'i' }, '<C-a>', "<Esc>gg0vG$")
+keymap({ 'n', 'v', 'i' }, '<C-a>', "<Esc>gg0vG$", "Select all text in Normal/Visual/Insert modes")
 
 -- Resizing windows
-keymap('n', '<C-down>', ':resize +3<CR>')
-keymap('n', '<C-up>', ':resize -3<CR>')
-keymap('n', '<C-right>', ':vertical resize +3<CR>')
-keymap('n', '<C-left>', ':vertical resize -3<CR>')
+keymap('n', '<C-down>', ':resize +3<CR>', "Increase current window height by 3")
+keymap('n', '<C-up>', ':resize -3<CR>', "Decrease current window height by 3")
+keymap('n', '<C-right>', ':vertical resize +3<CR>', "Increase current window width by 3")
+keymap('n', '<C-left>', ':vertical resize -3<CR>', "Decrease current window width by 3")
