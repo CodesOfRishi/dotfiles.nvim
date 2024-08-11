@@ -31,5 +31,16 @@ keymap('n', '<C-left>', ':vertical resize -3<CR>', { desc = "Decrease current wi
 keymap('v', '>', '>gv', { desc = "right indentation" })
 keymap('v', '<', '<gv', { desc = "left indentation" })
 
+-- Move to the next/previous displayed line (ignoring wrapped lines) when no count is provided
+-- Move to the next/previous line (including wrapped lines) when a count is provided.
+-- Here, the count is the count given for the last Normal mode command (check `v:count`)
+
+-- Smart movement up
+keymap({ "n", "x" }, "k", function() return vim.v.count == 0 and "gk" or "k" end, { expr = true, desc = "Up" })
+keymap({ "n", "x" }, "<Up>", function() return vim.v.count == 0 and "g<Up>" or "<Up>" end, { expr = true, desc = "Up" })
+-- Smart movement down
+keymap({ "n", "x" }, "j", function() return vim.v.count == 0 and "gj" or "j" end, { expr = true, desc = "Down" })
+keymap({ "n", "x" }, "<Down>", function() return vim.v.count == 0 and "g<Down>" or "<Down>" end, { expr = true, desc = "Down" })
+
 -- which-key.nvim key mappings
 keymap('n', '<leader>?', function() require("which-key").show({global = false}) end, { desc = "Buffer local keymaps (which-key)" })
