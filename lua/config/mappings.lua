@@ -24,5 +24,10 @@ keymap('n', '<C-up>', ':resize -3<CR>', "Decrease current window height by 3")
 keymap('n', '<C-right>', ':vertical resize +3<CR>', "Increase current window width by 3")
 keymap('n', '<C-left>', ':vertical resize -3<CR>', "Decrease current window width by 3")
 
+-- better indentation
+-- allows you to shift selected text to the right or left using the > and < keys in visual mode, while maintaining the original selection.
+keymap('v', '>', '>gv', "right indentation")
+keymap('v', '<', '<gv', "left indentation")
+
 -- which-key.nvim key mappings
 keymap('n', '<leader>?', function() require("which-key").show({global = false}) end, "Buffer local keymaps (which-key)")
