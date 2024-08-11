@@ -45,8 +45,8 @@ return {
 			keymap('n', '<leader>hD', function() gitsigns.diffthis('~') end, { desc = "Diff against the last commit" })
 			keymap('n', '<leader>td', gitsigns.toggle_deleted, { desc = "Toggle to show deleted version of the hunks"})
 
-		-- Text object
-		-- map({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>')
-	  end
+			-- Text object
+			keymap({'o', 'x'}, 'ih', ':<C-U>Gitsigns select_hunk<CR>', { desc = "inner hunk (text object)"})
+		 end
 	},
 }
