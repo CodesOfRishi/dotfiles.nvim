@@ -23,3 +23,6 @@ keymap('n', '<C-down>', ':resize +3<CR>', "Increase current window height by 3")
 keymap('n', '<C-up>', ':resize -3<CR>', "Decrease current window height by 3")
 keymap('n', '<C-right>', ':vertical resize +3<CR>', "Increase current window width by 3")
 keymap('n', '<C-left>', ':vertical resize -3<CR>', "Decrease current window width by 3")
+
+-- which-key.nvim key mappings
+keymap('n', '<leader>?', function() require("which-key").show({global = false}) end, "Buffer local keymaps (which-key)")
