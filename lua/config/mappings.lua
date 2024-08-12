@@ -5,6 +5,9 @@ local function keymap(mode, key, command, opts)
 	vim.keymap.set(mode, key, command, opts)
 end
 
+-- WARNING: Don't map Ctrl+Space as it is prefix key binding for Tmux
+-- WARNING: Don't map Ctrl+Shift+<arrwokeys> as it is key binding for resizing panes in Tmux
+
 -- ┌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┐
 -- ╎ NOTE: Mappings for Gitsign plugin can be found in lua/plugins/gitsign.lua ╎
 -- └╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌╌┘
