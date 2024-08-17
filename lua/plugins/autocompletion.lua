@@ -64,7 +64,7 @@ return {
 					['<CR>'] = cmp.mapping(
 						function(fallback)
 							if cmp.visible() then
-								cmp.confirm()
+								cmp.confirm({  select = true  })
 							else 
 								fallback()
 							end
