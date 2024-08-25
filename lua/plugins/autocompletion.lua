@@ -9,6 +9,10 @@ return {
 		dependencies = { "hrsh7th/nvim-cmp" },
 	},
 	{
+		"hrsh7th/cmp-path",
+		dependencies = { "hrsh7th/nvim-cmp" },
+	},
+	{
 		"hrsh7th/nvim-cmp",
 		config = function()
 			local cmp = require'cmp'
@@ -90,6 +94,7 @@ return {
 				sources = cmp.config.sources({
 					-- { name = "luansip" },
 					{ name = "buffer" },
+					{ name = "path" },
 				}),
 			})
 		end,
