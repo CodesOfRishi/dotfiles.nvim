@@ -4,6 +4,7 @@ return {
 	lazy = false,
 	config = function()
 		require("everforest").setup({})
-		-- vim.cmd.colorscheme("everforest")
+		vim.cmd.colorscheme("everforest")
 	end,
+	enabled = false,
 }
