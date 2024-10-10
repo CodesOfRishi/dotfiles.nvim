@@ -12,18 +12,25 @@
     ├── config/
     │   ├── autocmds.lua
     │   ├── lazy.lua
+    │   ├── mappings.lua
     │   └── options.lua
     └── plugins/
+        ├── autocompletion.lua
         ├── autopairs.lua
+        ├── catppuccin.lua
+        ├── colorizer.lua
+        ├── comment-box.lua
         ├── everforest.lua
         ├── gitsigns.lua
+        ├── lualine.lua
         ├── markview.lua
         ├── onedark.lua
         ├── surround.lua
         ├── todo-comments.lua
         ├── tokyonight.lua
-        └── treesitter.lua
+        ├── treesitter.lua
+        └── which-key.lua
 
-4 directories, 13 files
+4 directories, 20 files
 ```
 
