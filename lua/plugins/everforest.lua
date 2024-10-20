@@ -6,5 +6,4 @@ return {
 		require("everforest").setup({})
 		vim.cmd.colorscheme("everforest")
 	end,
-	enabled = false,
 }
