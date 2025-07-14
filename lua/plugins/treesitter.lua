@@ -7,4 +7,5 @@ return {
 		indent = { enable = true, },
 		ensure_installed = { "c", "cpp", "java", "toml", "bash", "python", "lua", "html" },
 	},
+	enabled = false,
 }
