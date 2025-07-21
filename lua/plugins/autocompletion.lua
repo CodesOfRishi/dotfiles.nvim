@@ -1,6 +1,7 @@
 return {
 	'saghen/blink.cmp',
-	event = "BufReadPre", -- lazy loading handled internally
+	-- event = { "BufReadPre", "BufNewFile" }, -- lazy loading handled internally
+	event = { "BufEnter" }, -- lazy loading handled internally
 	-- use a release tag to download pre-built binaries
 	version = '1.*',
 	-- OR build from source, requires nightly: https://rust-lang.github.io/rustup/concepts/channels.html#working-with-nightly-rust
