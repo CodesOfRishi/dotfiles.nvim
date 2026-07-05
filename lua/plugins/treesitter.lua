@@ -1,11 +1,16 @@
 return {
-	"romus204/tree-sitter-manager.nvim",
-	dependencies = {},
-	config = function()
-		require("tree-sitter-manager").setup({
-			ensure_installed = { "c", "cpp", "toml", "bash", "python", "lua", "html" },
-			indent = { enable = true, },
-			highlight = { enable = true, },
+	"nvim-treesitter/nvim-treesitter",
+	branch = "main",
+	main = "nvim-treesitter",
+	opts = {},
+	init = function()
+		vim.api.nvim_create_autocmd("FileType", {
+			callback = function()
+				-- Enable treesitter highlighting and disable regex syntax
+				pcall(vim.treesitter.start)
+				-- Enable treesitter-based indentation
+				vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
+			end,
 		})
 	end,
 }
