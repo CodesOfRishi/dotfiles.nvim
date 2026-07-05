@@ -1,11 +1,11 @@
 return {
-	"nvim-treesitter/nvim-treesitter",
-	branch = "main",
-	event = { "BufReadPre", "BufNewFile" },
-	build = ":TSUpdate", -- When upgrading the treesitter, all installed parsers are updated to the latest version 
-	opts = {
+	"romus204/tree-sitter-manager.nvim",
+	dependencies = {},
+	config = function()
+		require("tree-sitter-manager").setup({
 			ensure_installed = { "c", "cpp", "toml", "bash", "python", "lua", "html" },
 			indent = { enable = true, },
 			highlight = { enable = true, },
-	},
+		})
+	end,
 }
