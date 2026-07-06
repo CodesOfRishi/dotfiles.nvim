@@ -2,6 +2,7 @@ vim.opt.termguicolors = true
 vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.smartindent = true
+vim.opt.autoindent = true -- copy indent from current line when starting a new line
 vim.opt.ignorecase = true -- to search case-INsensitive
 vim.opt.smartcase = true -- requires ignorcase
 vim.opt.autowrite = true
