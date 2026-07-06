@@ -16,6 +16,7 @@ vim.opt.scrolloff = 5 -- minimal no. of screen lines to keep above & below the c
 vim.opt.foldmethod = "marker" -- markers are used to specify folds
 vim.opt.wrapscan = false -- Searches wrap around the end of the file.
 vim.opt.list = true
+vim.opt.expandtab = false -- use tab characters instead of spaces when pressed <Tab>
 -- vim.opt.listchars = { space = ' ', tab = '⋮ ', eol = '↵' }
 vim.opt.listchars = { space = ' ', tab = '⋮ ' }
 vim.opt.hidden = true
