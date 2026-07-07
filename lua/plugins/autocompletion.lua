@@ -66,6 +66,18 @@ return {
 			['<C-k>'] = { 'scroll_documentation_up', 'fallback' },
 			['<C-j>'] = { 'scroll_documentation_down', 'fallback' },
 		},
+		cmdline = {
+			enabled = true,
+			keymap = {
+				preset = "cmdline",
+				['<CR>'] = { 'accept', 'fallback' },
+			},
+			completion = {
+				menu = {
+					auto_show = false,
+				},
+			},
+		},
 	},
 	-- opts_extend = { "sources.default" }
 }
