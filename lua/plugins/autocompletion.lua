@@ -1,6 +1,5 @@
 return {
 	'saghen/blink.cmp',
-	-- event = { "BufReadPre", "BufNewFile" }, -- lazy loading handled internally
 	event = { "InsertEnter", "CmdlineEnter" }, -- lazy loading handled internally
 	-- use a release tag to download pre-built binaries
 	version = '1.*',
@@ -19,9 +18,9 @@ return {
 			nerd_font_variant = 'mono'
 		},
 
-		-- (Default) Only show the documentation popup when manually triggered
+		-- show the documentation popup automatically
 		completion = { 
-			documentation = { auto_show = false },
+			documentation = { auto_show = true },
 
 			-- Display a preview of the selected item on the current line
 			ghost_text = { enabled = true },
