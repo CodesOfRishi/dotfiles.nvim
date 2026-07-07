@@ -3,6 +3,7 @@ return {
 	branch = "main",
 	lazy = true,
 	event = { "BufReadPost", "BufNewFile" },
+	cmd = { "TSUpdate", "TSInstall", "TSLog", "TSUninstall" },
 	build = ":TSUpdate",
 	config = function()
 		local ensure_installed = { "c", "cpp", "bash", "python", "lua", "vimdoc" }
