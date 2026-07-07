@@ -24,6 +24,23 @@ return {
 
 			-- Display a preview of the selected item on the current line
 			ghost_text = { enabled = true },
+
+			menu = {
+				draw = {
+					columns = { { "kind_icon" }, { "label", gap = 1 }, { "kind" }, { "source_name" } },
+					treesitter = { "lsp" },
+					components = {
+						label = {
+							text = function(ctx)
+								return require("colorful-menu").blink_components_text(ctx)
+							end,
+							highlight = function(ctx)
+								return require("colorful-menu").blink_components_highlight(ctx)
+							end,
+						},
+					},
+				},
+			},
 		},
 
 		-- Default list of enabled providers defined so that you can extend it 
