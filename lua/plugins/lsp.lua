@@ -1,15 +1,25 @@
 return {
 	{
 		"mason-org/mason-lspconfig.nvim",
-		opts = {},
+		opts = {
+			ensure_installed = {
+				"basedpyright", "bashls"
+			}
+		},
 		dependencies = {
 			{ "mason-org/mason.nvim", opts = {} },
 			"neovim/nvim-lspconfig",
-		}
+			config = function()
+				vim.lsp.config("bashls", {
+					settings = {
+						bashIde = {
+							shellcheckPath = "/home/rishi/.local/bin/shellcheck",
+						},
+					},
+					-- filetypes = { "bash", "sh" },
+				})
+				vim.lsp.enable("bashls")
+			end,
+		},
 	},
-	{
-		"WhoIsSethDaniel/mason-tool-installer.nvim",
-		opts = { ensure_installed = { "basedpyright" } },
-		dependencies = { "mason-org/mason.nvim", opts = {} },
-	}
 }
