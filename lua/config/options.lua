@@ -21,6 +21,9 @@ vim.opt.expandtab = false -- use tab characters instead of spaces when pressed <
 vim.opt.listchars = { space = ' ', tab = '⋮ ' }
 vim.opt.hidden = true
 
+-- border style of floating windows (:h winborder)
+vim.opt.winborder = "rounded" -- bold / double / rounded / shadow / single / solid / none 
+
 -- To ALWAYS use the clipboard for ALL operations 
 -- (instead of interacting with the '+' and/or '*' registers explicitly):
 vim.opt.clipboard:append("unnamedplus")
