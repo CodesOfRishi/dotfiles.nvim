@@ -50,4 +50,4 @@ keymap({ "n", "x" }, "<Down>", function() return vim.v.count == 0 and "g<Down>" 
 keymap('n', '<leader>?', function() require("which-key").show({global = false}) end, { desc = "Buffer local keymaps (which-key)" })
 
 -- execute current file in a split terminal
-keymap('n', '<leader>xx', ':split<CR>:terminal ./%<CR>', { desc = "Execuate current file in a split terminal" })
+keymap('n', '<leader>xx', ':split term://./%<CR>', { desc = "Execuate current file in a split terminal" })
