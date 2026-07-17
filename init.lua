@@ -33,8 +33,9 @@ vim.g.mapleader = " "
 local nvim_configuration_modules = { 
 	"config.options",
 	"config.autocmds",
+	"config.commands",
 	"config.mappings",
-	"config.lazy"
+	"config.lazy",
 }
 
 for i = 1, #nvim_configuration_modules, 1 do
