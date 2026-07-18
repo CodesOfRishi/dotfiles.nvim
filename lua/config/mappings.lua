@@ -55,3 +55,6 @@ keymap('n', '<leader>xx', ':split term://./%<CR>', { desc = "Execuate current fi
 -- buffers_popup
 keymap('n', '<leader>bl', function() require("buffers_popup").toggle() end, { desc = "Toggle popup showing list of buffers" })
 
+-- fzf-lua for buffers
+keymap('n', '<leader>fb', ":FzfLua buffers<CR>", { desc = "Fzf list of buffers" })
+
