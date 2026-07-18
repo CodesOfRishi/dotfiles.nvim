@@ -51,3 +51,7 @@ keymap('n', '<leader>?', function() require("which-key").show({global = false}) 
 
 -- execute current file in a split terminal
 keymap('n', '<leader>xx', ':split term://./%<CR>', { desc = "Execuate current file in a split terminal" })
+
+-- buffers_popup
+keymap('n', '<leader>bl', function() require("buffers_popup").toggle() end, { desc = "Toggle popup showing list of buffers" })
+
