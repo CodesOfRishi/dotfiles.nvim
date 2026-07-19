@@ -16,7 +16,6 @@ return {
 							shellcheckPath = "/home/rishi/.local/bin/shellcheck",
 						},
 					},
-					-- filetypes = { "bash", "sh" },
 				})
 				vim.lsp.enable("bashls")
 			end,
