@@ -59,3 +59,10 @@ keymap('n', '<leader>bl', function() require("buffers_popup").toggle() end, { de
 -- keymap('n', '<leader>fb', ":FzfLua buffers<CR>", { desc = "Fzf list of buffers" })
 keymap('n', '<leader>fb', function() require("fzf-lua").buffers() end, { desc = "Fzf list of buffers" })
 
+-- fzf-lua for files
+keymap('n', '<leader>ff', function() require("fzf-lua").files() end, { desc = "Fzf list of files in current and sub-directories" })
+
+-- fzf-lua for git commits logs
+-- keymap('n', '<leader>fgl', function() require("fzf-lua").git_commits({fzf_opts={["--preview-window"]='bottom'}}) end, { desc = "fzf Git commit logs"})
+keymap('n', '<leader>fgl', function() require("fzf-lua").git_commits() end, { desc = "Fzf Git commit logs"})
+
