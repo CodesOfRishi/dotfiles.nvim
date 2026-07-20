@@ -14,6 +14,7 @@
 
 return {
 	"LudoPinelli/comment-box.nvim",
+	event = "BufReadPre",
 	opts = {
 		box_width = 100,
 	},
