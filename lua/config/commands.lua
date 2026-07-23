@@ -48,8 +48,3 @@ vim.api.nvim_create_user_command("Gsh", function(opts)
 		vim.api.nvim_buf_set_name(0, "git-show:" .. opts.args)
 	end, 
 	{nargs = 1, desc = "Show a commit using git + delta"})
-
--- buffers_popup
-vim.api.nvim_create_user_command("BuffersPopup", function()
-		require("buffers_popup").toggle()
-	end, { desc = "Toggle popup showing list of buffers" })
