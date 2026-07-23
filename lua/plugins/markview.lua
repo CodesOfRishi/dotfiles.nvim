@@ -4,6 +4,8 @@ return {
 		"nvim-treesitter/nvim-treesitter",
 		"nvim-tree/nvim-web-devicons",
 	},
+	ft = { "md", "markdown", "mdown", "mkdn", "mkd", "mdwn", "mdtxt", "mdtext" },
+	event = "BufReadPre",
 	opts = {
 		preview = {
 			modes = { "n", "no", "c" },
@@ -16,5 +18,5 @@ return {
 			},
 		},
 	},
-	enabled = false,
+	enabled = true,
 }
