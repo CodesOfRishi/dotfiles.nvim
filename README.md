@@ -12,21 +12,25 @@
 │   └── plugin
 │       └── treesitter.lua
 ├── lsp
-│   └── basedpyright.lua
+│   ├── basedpyright.lua
+│   └── bashls.lua
 └── lua
     ├── config
     │   ├── autocmds.lua
+    │   ├── commands.lua
     │   ├── lazy.lua
     │   ├── mappings.lua
     │   └── options.lua
     └── plugins
         ├── autocompletion.lua
         ├── autopairs.lua
+        ├── baleia.lua
         ├── catppuccin.lua
         ├── colorful-menu.lua
         ├── colorizer.lua
         ├── comment-box.lua
         ├── everforest.lua
+        ├── fzf-lua.lua
         ├── gitsigns.lua
         ├── gruvbox.lua
         ├── indent-blankline.lua
@@ -42,6 +46,6 @@
         ├── treesitter.lua
         └── which-key.lua
 
-7 directories, 28 files
+7 directories, 32 files
 ```
 
