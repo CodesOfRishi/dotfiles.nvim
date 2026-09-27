@@ -10,6 +10,7 @@ return {
 		preview = {
 			modes = { "n", "no", "c" },
 			hybrid_modes = { "i" },
+			icon_provider = "devicons",
 			callbacks = {
 				on_enable = function (_, win)
 					vim.wo[win].conceallevel = 2;
