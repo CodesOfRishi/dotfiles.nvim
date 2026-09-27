@@ -7,6 +7,21 @@ return {
 	ft = { "md", "markdown", "mdown", "mkdn", "mkd", "mdwn", "mdtxt", "mdtext" },
 	event = "BufReadPre",
 	opts = {
+		-- markdown = {
+		-- 	headings = require("markview.presets").headings.presets.simple
+		-- },
+		markdown_inline ={
+			tags = {
+				default = {
+					hl = "MarkviewCodeInfo",
+					padding_left = "",
+					padding_left_hl = "MarkviewCodeFg",
+					padding_right = "",
+					padding_right_hl = "MarkviewCodeFg"
+				},
+				enable = true,
+			},
+		},
 		preview = {
 			modes = { "n", "no", "c" },
 			hybrid_modes = { "i" },
