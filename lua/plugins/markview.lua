@@ -17,6 +17,28 @@ return {
 				end
 			},
 		},
+		latex = {
+			enable = true,
+			symbols = {
+				enable = true,
+				hl = "MarkviewComment"
+			},
+			blocks = {
+				enable = true,
+				hl = "MarkviewCode",
+				pad_char = " ",
+				pad_amount = 3,
+				text = "  LaTeX ",
+				text_hl = "MarkviewCodeInfo"
+			},
+		},
+		typst = {
+			enable = true,
+			symbols = {
+				enable = true,
+				hl = "Special"
+			},
+		},
 	},
 	enabled = true,
 }
